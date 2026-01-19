@@ -1,5 +1,7 @@
 // Auth middle ware Verfiy karega ye user hai ya nahi
 
+import jwt from "jsonwebtoken";
+
 import { ApiError } from "../utils/ApiError.js";
 import { asyncHandler } from "../utils/asyncHandler.js";
 import {User} from '../models/user.model.js'
@@ -17,7 +19,7 @@ export const  verifyJWT = asyncHandler(async(req, _, next)=>{
 
     //info ko decode karna padega
 
-   const decodeToken = await jwt.verifyJWT(token, process.env.ACCESS_TOKEN_SECRET)
+   const decodeToken = await jwt.verify(token, process.env.ACCESS_TOKEN_SECRET)
 
    const user = await User.findById(decodeToken?._id).select("-password -refreshToken")
 if(!user){
