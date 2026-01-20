@@ -11,6 +11,8 @@ https://github.com/hiteshchoudhary/chai-backend/blob/main/package.json
     > file delete use the link & unlink from the node FS (file system)
 * will create the middleware using the multer
 * on file updates need to create the seprate controller
+* user models se dusre modal ka data kaise le sakte hai
+
 MonogDB
 anamdeo71_db_user
 B9wFRWW8Yi1L9VE4
