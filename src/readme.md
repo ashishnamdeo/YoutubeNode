@@ -10,7 +10,7 @@ https://github.com/hiteshchoudhary/chai-backend/blob/main/package.json
     > npm i cloudinary
     > file delete use the link & unlink from the node FS (file system)
 * will create the middleware using the multer
-
+* on file updates need to create the seprate controller
 MonogDB
 anamdeo71_db_user
 B9wFRWW8Yi1L9VE4
